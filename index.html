@@ -1,575 +1,1165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07090e">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Satyam Samanta is an AI and full-stack software engineer building practical systems across deep learning, responsive web apps, and backend APIs.">
+  <meta name="keywords" content="Satyam Samanta, AI Engineer, Full-Stack Engineer, Machine Learning, PyTorch, React 19, TypeScript, Bengaluru, Portfolio">
+  <meta name="author" content="Satyam Samanta">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://satyam-123336.github.io/My-Portfolio/">
 
-  <title>Satyam Samanta | AI & Full-Stack Developer</title>
-  <meta name="description" content="Satyam Samanta is a final-year Computer Science Engineering student specializing in AI/ML pipelines, Deep Learning, and Full-Stack Web Development. Based in Bengaluru, Karnataka, India." />
-  <meta name="author" content="Satyam Samanta" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-  <meta name="theme-color" content="#0f1117" />
-  <meta name="keywords" content="Satyam Samanta, AI & Full-Stack Developer, Deep Learning, AI/ML pipelines, Python, React, FastAPI, TensorFlow, PyTorch, Bengaluru, software engineer portfolio" />
+  <!-- Open Graph / Social Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Satyam Samanta | AI & Full-Stack Engineer">
+  <meta property="og:description" content="Computer science engineer building applied machine learning systems, responsive interfaces, and scalable backends.">
+  <meta property="og:url" content="https://satyam-123336.github.io/My-Portfolio/">
+  <meta property="og:image" content="https://satyam-123336.github.io/My-Portfolio/og-preview.png">
 
-  <link rel="canonical" href="https://github.com/Satyam-123336" />
-  <link rel="author" href="https://github.com/Satyam-123336" />
-  <link rel="me" href="https://github.com/Satyam-123336" />
-  <link rel="me" href="https://linkedin.com/in/satyamsam10" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Satyam Samanta | AI & Full-Stack Engineer">
+  <meta name="twitter:description" content="Computer science engineer building applied machine learning systems, responsive interfaces, and scalable backends.">
+  <meta name="twitter:image" content="https://satyam-123336.github.io/My-Portfolio/og-preview.png">
 
-  <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Satyam Samanta | AI & Full-Stack Developer" />
-  <meta property="og:description" content="Final-year Computer Science Engineering student specializing in AI/ML pipelines, Deep Learning, and Full-Stack Web Development." />
-  <meta property="og:url" content="https://github.com/Satyam-123336" />
-  <meta property="og:site_name" content="Satyam Samanta Portfolio" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="profile:first_name" content="Satyam" />
-  <meta property="profile:last_name" content="Samanta" />
-  <meta property="profile:username" content="Satyam-123336" />
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2307090e'/%3E%3Ccircle cx='16' cy='16' r='14' stroke='%23d8f56a' stroke-width='1.5' fill='none' stroke-dasharray='3 3'/%3E%3Ctext x='16' y='21.5' font-family='monospace' font-weight='bold' font-size='16' fill='%23d8f56a' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@Satyam_Sam2004" />
-  <meta name="twitter:creator" content="@Satyam_Sam2004" />
-  <meta name="twitter:title" content="Satyam Samanta | AI & Full-Stack Developer" />
-  <meta name="twitter:description" content="Final-year CSE student specializing in AI/ML pipelines and Full-Stack Web Development. Python, PyTorch, React, FastAPI." />
+  <title>Satyam Samanta | AI & Full-Stack Engineer</title>
 
-  <meta name="geo.region" content="IN-KA" />
-  <meta name="geo.placename" content="Bengaluru, Karnataka" />
-  <meta name="geo.position" content="12.9716;77.5946" />
-  <meta name="ICBM" content="12.9716, 77.5946" />
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <link rel="stylesheet" href="style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-
-  <link rel="stylesheet" href="style.css" />
-
+  <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "@id": "https://github.com/Satyam-123336/#person",
-        "name": "Satyam Samanta",
-        "givenName": "Satyam",
-        "familyName": "Samanta",
-        "jobTitle": "AI & Full-Stack Developer",
-        "description": "Final-year Computer Science Engineering student specializing in AI/ML pipelines, Deep Learning, and Full-Stack Web Development.",
-        "url": "https://github.com/Satyam-123336",
-        "email": "satyamsamanta10@gmail.com",
-        "sameAs": [
-          "https://github.com/Satyam-123336",
-          "https://linkedin.com/in/satyamsam10"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Bengaluru",
-          "addressRegion": "IN",
-          "addressCountry": "IN"
-        },
-        "knowsAbout": [
-          "Python", "C", "C++", "Java", "JavaScript", "TypeScript", "SQL",
-          "TensorFlow", "Scikit-learn", "OpenCV", "Pandas", "NumPy", "Matplotlib", "Seaborn",
-          "HTML5", "CSS3", "React", "Next.js", "Node.js", "Express.js", "FastAPI", "Tailwind CSS", "PostgreSQL",
-          "Git", "GitHub Actions", "Hugging Face Spaces", "Postman", "Firebase", "Supabase", "Vercel", "CoppeliaSim"
-        ],
-        "hasOccupation": {
-          "@type": "Occupation",
-          "name": "AI & Full-Stack Developer",
-          "occupationLocation": {
-            "@type": "City",
-            "name": "Bengaluru"
-          }
-        },
-        "alumniOf": [
-          {
-            "@type": "Organization",
-            "name": "MVJ College of Engineering"
-          }
-        ]
-      }
+    "@type": "Person",
+    "name": "Satyam Samanta",
+    "url": "https://satyam-123336.github.io/My-Portfolio/",
+    "jobTitle": "Software Engineer (AI & Full-Stack)",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "MVJ College of Engineering, Bengaluru"
+    },
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Computer Vision",
+      "PyTorch",
+      "React 19",
+      "TypeScript",
+      "FastAPI",
+      "Full-Stack Development"
+    ],
+    "sameAs": [
+      "https://github.com/Satyam-123336",
+      "https://linkedin.com/in/satyamsam10"
     ]
   }
   </script>
-
-  <script>
-    (function() {
-      const stored = localStorage.getItem('portfolio-theme');
-      if (stored) document.documentElement.setAttribute('data-theme', stored);
-    })();
-  </script>
 </head>
-
 <body>
+  <!-- Accessibility Skip Link -->
+  <a href="#hero" class="skip-link">Skip to main content</a>
+  <!-- Ambient Noise Texture -->
+  <div class="noise" aria-hidden="true"></div>
 
-  <nav id="navbar" role="navigation" aria-label="Main navigation">
-    <div class="nav-inner">
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" aria-hidden="true">
+    <span id="scroll-progress-bar"></span>
+  </div>
 
-      <a href="#hero" class="nav-logo" aria-label="Satyam Samanta, back to top">
-        Satyam<span>.</span>
-      </a>
+  <!-- Custom Magnetic Cursor (Desktop) -->
+  <div class="custom-cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-aura"></div>
+  </div>
 
-      <ul class="nav-links" role="list">
-        <li><a href="#about"      class="nav-link" id="nav-about">About</a></li>
-        <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
-        <li><a href="#projects"   class="nav-link" id="nav-projects">Projects</a></li>
-        <li><a href="#contact"    class="nav-link" id="nav-contact">Contact</a></li>
-      </ul>
+  <!-- Global Site Header -->
+  <header class="site-header" id="navbar">
+    <a class="brand" href="#hero" aria-label="Satyam Samanta, Back to top">
+      <span class="brand-mark">
+        <span>S</span>
+        <span class="brand-pulse"></span>
+      </span>
+      <span class="brand-text">Satyam<span class="accent">.</span></span>
+      <span class="brand-role">AI / Full-Stack</span>
+    </a>
 
-      <div class="nav-controls">
-        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-          <img src="https://img.icons8.com/ios-glyphs/30/sun--v1.png" alt="sun" class="theme-sun-icon" />
-        </button>
-        <button id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-          <i class="fa-solid fa-bars"></i>
+    <nav class="desktop-nav" aria-label="Main Navigation">
+      <a href="#about" class="nav-link" data-section="about"><span>01</span>About</a>
+      <a href="#work" class="nav-link" data-section="work"><span>02</span>Work</a>
+      <a href="#skills" class="nav-link" data-section="skills"><span>03</span>Stack</a>
+      <a href="#experience" class="nav-link" data-section="experience"><span>04</span>Experience</a>
+      <a href="#contact" class="nav-link" data-section="contact"><span>05</span>Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <!-- Command Palette Trigger -->
+      <button class="palette-trigger" id="palette-open-btn" type="button" aria-label="Open Command Palette (Ctrl+K)" title="Quick Actions (Ctrl+K)">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span class="palette-hotkey"><kbd>⌘</kbd><kbd>K</kbd></span>
+      </button>
+
+      <!-- Web Audio SFX Toggle -->
+      <button class="icon-button audio-toggle" id="audio-toggle" type="button" aria-label="Toggle sound effects" title="Enable UI Audio">
+        <i class="fa-solid fa-volume-xmark"></i>
+      </button>
+
+      <!-- Theme Switcher -->
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme" title="Toggle Dark/Light Mode">
+        <i class="fa-solid fa-sun"></i>
+      </button>
+
+      <!-- Mobile Hamburger -->
+      <button class="icon-button menu-button" id="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-backdrop" id="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <div class="mobile-menu-header">
+        <span class="brand-text">Satyam<span class="accent">.</span></span>
+        <button class="icon-button" id="mobile-menu-close" type="button" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
 
-    </div>
-  </nav>
+      <nav class="mobile-menu-nav">
+        <a href="#about" class="mobile-nav-link">
+          <span class="mobile-nav-index">01</span>
+          <span class="mobile-nav-text">About & Background</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#work" class="mobile-nav-link">
+          <span class="mobile-nav-index">02</span>
+          <span class="mobile-nav-text">Selected Projects</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#skills" class="mobile-nav-link">
+          <span class="mobile-nav-index">03</span>
+          <span class="mobile-nav-text">Technical Stack</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#experience" class="mobile-nav-link">
+          <span class="mobile-nav-index">04</span>
+          <span class="mobile-nav-text">Experience & Education</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="mobile-nav-link">
+          <span class="mobile-nav-index">05</span>
+          <span class="mobile-nav-text">Contact</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </nav>
 
-  <div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
-    <div class="mobile-menu-backdrop"></div>
-    <div class="mobile-menu-panel">
-      <a href="#about"      class="mobile-nav-link">About</a>
-      <a href="#experience" class="mobile-nav-link">Experience</a>
-      <a href="#projects"   class="mobile-nav-link">Projects</a>
-      <a href="#contact"    class="mobile-nav-link">Contact</a>
+      <div class="mobile-menu-footer">
+        <a class="button button-primary mobile-cv-btn" href="resume.pdf" target="_blank" rel="noopener">
+          <i class="fa-solid fa-file-pdf"></i> View Résumé
+        </a>
+        <div class="mobile-socials">
+          <a href="https://github.com/Satyam-123336" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/satyamsam10" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=satyamsamanta10@gmail.com" target="_blank" rel="noopener" aria-label="Email via Gmail"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Palette Modal (Cmd + K) -->
+  <div class="command-palette-overlay" id="command-palette" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Command Palette">
+    <div class="command-palette-backdrop" id="palette-backdrop"></div>
+    <div class="command-palette-box">
+      <div class="palette-search-wrapper">
+        <i class="fa-solid fa-terminal palette-search-icon"></i>
+        <input type="text" id="palette-input" class="palette-input" placeholder="Search projects, sections, or actions..." autocomplete="off" spellcheck="false">
+        <span class="palette-esc-badge"><kbd>ESC</kbd></span>
+      </div>
+
+      <div class="palette-results" id="palette-results" role="listbox">
+        <!-- Injected dynamically by script.js -->
+      </div>
+
+      <div class="palette-footer">
+        <span><kbd>↑</kbd><kbd>↓</kbd> Navigate</span>
+        <span><kbd>↵</kbd> Select</span>
+        <span><kbd>ESC</kbd> Close</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Project Detail Modal -->
+  <div class="project-modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Project Details">
+    <div class="project-modal-backdrop" id="modal-backdrop"></div>
+    <div class="project-modal-card">
+      <button class="project-modal-close" id="modal-close-btn" type="button" aria-label="Close project modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="project-modal-body" id="modal-content">
+        <!-- Injected dynamically by script.js -->
+      </div>
     </div>
   </div>
 
   <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero" data-parallax-container>
+      <!-- Interactive Particle Canvas -->
+      <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
 
-    <section id="hero" aria-label="Introduction">
-      <div class="hero-content">
+      <!-- Background Ambient Glow & Grid -->
+      <div class="hero-grid" data-parallax-speed="0.15" aria-hidden="true"></div>
+      <div class="ambient-glow glow-1" aria-hidden="true"></div>
+      <div class="ambient-glow glow-2" aria-hidden="true"></div>
 
-        <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
-        <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
-        <div class="hero-blob hero-blob-3" aria-hidden="true"></div>
-
-        <div class="hero-badge fade-in">
-          <span class="badge-dot" aria-hidden="true"></span>
-          Seeking SDE / ML roles
+      <!-- Hero Left Column -->
+      <div class="hero-copy reveal">
+        <div class="status-badge" data-parallax-speed="0.05">
+          <span class="status-pulse">
+            <span class="status-ping"></span>
+            <span class="status-core"></span>
+          </span>
+          <span class="status-text">Available for SDE & ML Roles / Bengaluru & Remote</span>
         </div>
 
-        <h1 class="hero-name fade-in delay-1">
-          Hi, I'm<br>
-          <span class="gradient-text">Satyam Samanta.</span>
+        <h1 class="hero-title">
+          Building practical<br>
+          <span class="glitch-text" data-text="AI & full-stack">AI & full-stack</span><br>
+          <span class="gradient-text">systems.</span>
         </h1>
 
-        <p class="hero-tagline fade-in delay-2" id="hero-tagline">
-          <strong>AI & Full-Stack Developer</strong> specializing in AI/ML pipelines,
-          Deep Learning, and scalable full-stack web applications.<span class="typing-cursor" aria-hidden="true"></span>
+        <p class="hero-intro">
+          I'm <strong class="text-white">Satyam Samanta</strong>, a software engineer working on applied machine learning and full-stack web applications. I build systems from deep learning model training in PyTorch to responsive web applications in React, TypeScript, and FastAPI.
         </p>
 
-        <div class="hero-cta fade-in delay-3">
-          <a href="#projects" class="btn btn-primary" id="hero-cta-work">
-            <i class="fa-solid fa-arrow-down"></i>
-            View My Work
+        <div class="hero-actions">
+          <a class="button button-primary magnetic" href="#work" data-magnetic>
+            <span>View Projects</span>
+            <i class="fa-solid fa-arrow-down-long"></i>
           </a>
-          <a href="resume.pdf" class="btn btn-secondary" id="hero-cta-resume" target="_blank" rel="noopener">
+          <a class="button button-glass magnetic" href="resume.pdf" target="_blank" rel="noopener" data-magnetic>
             <i class="fa-solid fa-file-pdf"></i>
-            View Resume
+            <span>View Résumé</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <button class="button button-subtle magnetic" id="copy-email-hero-btn" type="button" data-magnetic aria-label="Copy email address">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Email</span>
+          </button>
+        </div>
+
+        <!-- Metrics Strip -->
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-value" data-counter="7">0</span>
+            <span class="metric-label">Selected Builds</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-value" data-counter="97.4" data-decimals="1" data-suffix="%">0%</span>
+            <span class="metric-label">RealityGuard Accuracy</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-value" data-counter="1728" data-suffix="/s">0</span>
+            <span class="metric-label">SLAY AI Outfit Combos</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-value">Bengaluru<span class="accent">, IN</span></span>
+            <span class="metric-label" id="local-time-hero">UTC+5:30</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right Column: 3D Centerpiece -->
+      <div class="hero-visual reveal delay-2" aria-label="Interactive Systems Visual">
+        <div class="tilt-container" id="hero-tilt-card" data-tilt>
+          <div class="tilt-glow" aria-hidden="true"></div>
+          
+          <!-- Orbiting Atmospheric Rings -->
+          <div class="orbit orbit-one" data-parallax-speed="0.2"></div>
+          <div class="orbit orbit-two" data-parallax-speed="-0.15"></div>
+          <div class="orbit orbit-three" data-parallax-speed="0.3"></div>
+
+          <!-- Holographic 3D Card -->
+          <div class="visual-card">
+            <div class="visual-card-glass"></div>
+            
+            <div class="visual-top">
+              <div class="visual-meta-left">
+                <span class="sys-led"></span>
+                <span class="mini-label">AI_SYSTEMS :: ACTIVE</span>
+              </div>
+              <span class="live-pill">PRODUCTION READY</span>
+            </div>
+
+            <div class="visual-symbol">
+              <span class="symbol-text">AI</span>
+              <div class="symbol-accent-icon">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+            </div>
+
+            <div class="visual-center">
+              <span class="holo-tag">ENGINEERING FOCUS</span>
+              <h2>Practical models.<br><span class="accent">Clean code.</span></h2>
+            </div>
+
+            <div class="visual-footer">
+              <div class="stack-strip">
+                <span class="chip">PyTorch</span>
+                <span class="chip">React 19</span>
+                <span class="chip">FastAPI</span>
+                <span class="chip">TypeScript</span>
+              </div>
+              <div class="visual-latency">
+                <i class="fa-solid fa-bolt"></i> &lt; 45ms
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-top" data-parallax-speed="0.35">
+            <div class="badge-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="badge-content">
+              <strong>Deepfake Detection</strong>
+              <span>PyTorch & MTCNN Pipeline</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom" data-parallax-speed="-0.25">
+            <div class="badge-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div class="badge-content">
+              <strong>Real-Time Systems</strong>
+              <span>TypeScript & WebSockets</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-side" data-parallax-speed="0.4">
+            <div class="badge-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="badge-content">
+              <strong>ML Classification</strong>
+              <span>Gradient Boosting on 48K+ Records</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parallax Scroll Cue -->
+      <a class="scroll-cue" href="#about" aria-label="Scroll to discover about section">
+        <div class="mouse-icon">
+          <div class="mouse-wheel"></div>
+        </div>
+        <span>SCROLL TO DISCOVER</span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT & INTERACTIVE TERMINAL ==================== -->
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <div class="heading-left">
+          <p class="eyebrow"><span class="accent-number">01</span> / BACKGROUND & FOCUS</p>
+          <h2>Engineer by craft.<br><em>Practical by design.</em></h2>
+        </div>
+        <div class="heading-right">
+          <span class="section-badge"><i class="fa-solid fa-code-commit"></i> BENGALURU, INDIA</span>
+        </div>
+      </div>
+
+      <div class="about-layout">
+        <!-- Interactive Cyber Terminal -->
+        <div class="terminal-wrapper reveal" data-tilt>
+          <div class="terminal-header">
+            <div class="terminal-controls">
+              <span class="term-btn term-close" title="Close simulation"></span>
+              <span class="term-btn term-min" title="Minimize simulation"></span>
+              <span class="term-btn term-max" title="Expand simulation"></span>
+            </div>
+            <div class="terminal-title">
+              <i class="fa-solid fa-terminal"></i>
+              <span>satyam@dev-box:~/profile</span>
+            </div>
+            <div class="terminal-badge">bash / interactive</div>
+          </div>
+
+          <!-- Quick Action Command Chips -->
+          <div class="terminal-chips" aria-label="Terminal Quick Commands">
+            <button class="chip-btn" data-cmd="help" type="button"><i class="fa-solid fa-circle-question"></i> help</button>
+            <button class="chip-btn" data-cmd="skills" type="button"><i class="fa-solid fa-microchip"></i> skills</button>
+            <button class="chip-btn" data-cmd="projects" type="button"><i class="fa-solid fa-diagram-project"></i> projects</button>
+            <button class="chip-btn" data-cmd="metrics" type="button"><i class="fa-solid fa-chart-line"></i> metrics</button>
+            <button class="chip-btn" data-cmd="contact" type="button"><i class="fa-solid fa-envelope"></i> contact</button>
+            <button class="chip-btn" data-cmd="clear" type="button"><i class="fa-solid fa-eraser"></i> clear</button>
+          </div>
+
+          <!-- Terminal Output Log -->
+          <div class="terminal-screen" id="terminal-screen" tabindex="0" role="region" aria-label="Interactive Terminal Output">
+            <div class="terminal-history" id="terminal-history">
+              <!-- Bootup lines injected via script.js -->
+            </div>
+            <div class="terminal-input-row">
+              <span class="prompt-user">satyam<span class="prompt-symbol">@</span>linux</span>
+              <span class="prompt-path">~</span>
+              <span class="prompt-dollar">$</span>
+              <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" aria-label="Terminal command input" placeholder="type 'help' or click pills above...">
+            </div>
+          </div>
+
+          <div class="terminal-statusbar">
+            <span><i class="fa-solid fa-circle-dot live-indicator"></i> SHELL READY</span>
+            <span>LINUX x86_64</span>
+          </div>
+        </div>
+
+        <!-- Narrative Content -->
+        <div class="about-content reveal delay-1">
+          <div class="narrative-tag">
+            <i class="fa-solid fa-user-check"></i> ABOUT ME
+          </div>
+          <p class="lead">
+            I am a Computer Science Engineering student at MVJ College of Engineering in Bengaluru, working on applied machine learning and full-stack web applications.
+          </p>
+          <p>
+            My work focuses on practical engineering: taking models from experimentation into production. That means training lightweight neural networks for edge CPU inference, building fast asynchronous backends with FastAPI and Node, and creating clean, responsive user interfaces in React and TypeScript.
+          </p>
+          <p>
+            Whether it is detecting deepfake video manipulations with multimodal signals, building real-time WebSocket applications, or training tabular models on tens of thousands of records, I care about code quality, system reliability, and measurable performance.
+          </p>
+
+          <!-- Focus Area Cards -->
+          <div class="focus-grid">
+            <div class="focus-card">
+              <div class="focus-icon"><i class="fa-solid fa-brain"></i></div>
+              <h4>Applied Machine Learning</h4>
+              <p>PyTorch, MTCNN, OpenCV, Scikit-Learn, Gemini API, Streamlit.</p>
+            </div>
+            <div class="focus-card">
+              <div class="focus-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <h4>Full-Stack Development</h4>
+              <p>React 19, TypeScript, FastAPI, Node.js, PostgreSQL, Supabase.</p>
+            </div>
+          </div>
+
+          <div class="about-cta-row">
+            <a class="text-link magnetic" href="https://mail.google.com/mail/?view=cm&fs=1&to=satyamsamanta10@gmail.com" target="_blank" rel="noopener" data-magnetic>
+              <span>Get in touch via Gmail</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="text-link secondary" href="#work">
+              <span>View technical builds</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SELECTED WORK / PROJECTS ==================== -->
+    <section class="section work-section" id="work">
+      <div class="section-heading work-heading reveal">
+        <div class="heading-left">
+          <p class="eyebrow"><span class="accent-number">02</span> / SELECTED WORK</p>
+          <h2>Featured builds & repositories.</h2>
+          <p class="section-kicker">
+            Seven public projects spanning computer vision, machine learning classification, real-time messaging, and full-stack applications. All source code is available on GitHub.
+          </p>
+        </div>
+        <div class="heading-right">
+          <a class="text-link github-all-btn" href="https://github.com/Satyam-123336" target="_blank" rel="noopener">
+            <span>All Repositories on GitHub</span>
+            <i class="fa-brands fa-github"></i>
           </a>
         </div>
-
-        <div class="hero-stats fade-in delay-4">
-          <div class="stat-item">
-            <span class="stat-num" data-target="3" id="stat-years">0</span>
-            <span class="stat-label">Years engineering</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num" data-target="15" id="stat-projects">0</span>
-            <span class="stat-label">Projects shipped</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num" data-target="2" id="stat-teams">0</span>
-            <span class="stat-label">Patents/Papers</span>
-          </div>
-        </div>
-
       </div>
 
-      <div class="scroll-indicator" aria-hidden="true">
-        <span>scroll</span>
-        <i class="fa-solid fa-chevron-down"></i>
+      <!-- Filter Tabs -->
+      <div class="filter-bar reveal" role="tablist" aria-label="Filter Projects">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+          <i class="fa-solid fa-border-all"></i> All Builds <span class="filter-count">7</span>
+        </button>
+        <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">
+          <i class="fa-solid fa-brain"></i> AI & Machine Learning <span class="filter-count">4</span>
+        </button>
+        <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">
+          <i class="fa-solid fa-server"></i> Full-Stack & Web <span class="filter-count">4</span>
+        </button>
+        <button class="filter-btn" data-filter="iot" role="tab" aria-selected="false">
+          <i class="fa-solid fa-microchip"></i> Systems & IoT <span class="filter-count">1</span>
+        </button>
       </div>
-    </section>
 
-    <section id="about" aria-label="About me">
-      <div class="container">
-        <span class="section-label fade-in">// about</span>
-        <h2 class="section-title fade-in delay-1">A bit about me</h2>
-
-        <div class="about-grid">
-
-          <div class="profile-wrap fade-in">
-            <div class="tech-guy-animation">
-              <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-                <!-- Background Glow -->
-                <circle cx="250" cy="250" r="200" fill="var(--accent)" opacity="0.1" class="glow-pulse" />
-                
-                <!-- Desk -->
-                <rect x="50" y="400" width="400" height="15" fill="#2a2d3e" rx="5" />
-                <rect x="100" y="415" width="20" height="85" fill="#1e202d" />
-                <rect x="380" y="415" width="20" height="85" fill="#1e202d" />
-                
-                <!-- Monitor -->
-                <rect x="150" y="150" width="200" height="130" fill="#1a1c26" rx="8" stroke="#383c51" stroke-width="4"/>
-                <rect x="235" y="280" width="30" height="40" fill="#383c51" />
-                <rect x="195" y="320" width="110" height="8" fill="#4b506b" rx="4" />
-                
-                <!-- Monitor Screen Content -->
-                <g class="code-lines">
-                  <rect x="170" y="170" width="60" height="6" fill="#f85149" rx="3" />
-                  <rect x="240" y="170" width="80" height="6" fill="#58a6ff" rx="3" />
-                  <rect x="170" y="190" width="120" height="6" fill="#3fb950" rx="3" />
-                  <rect x="190" y="210" width="90" height="6" fill="#a371f7" rx="3" />
-                  <rect x="190" y="230" width="110" height="6" fill="#d2a8ff" rx="3" />
-                  <rect x="170" y="250" width="70" height="6" fill="#58a6ff" rx="3" />
-                </g>
-
-                <!-- Character -->
-                <g class="character">
-                  <!-- Body -->
-                  <path d="M 180 400 C 180 300, 320 300, 320 400 Z" fill="#2d334a" />
-                  
-                  <!-- Head -->
-                  <circle cx="250" cy="240" r="40" fill="#ffcda5" class="head-bob" />
-                  
-                  <!-- Hair -->
-                  <path d="M 210 240 C 210 180, 290 180, 290 240 C 290 220, 210 220, 210 240 Z" fill="#20222e" class="head-bob" />
-                  
-                  <!-- Glasses -->
-                  <g class="head-bob">
-                    <rect x="220" y="230" width="22" height="14" fill="none" stroke="#333" stroke-width="3" rx="4" />
-                    <rect x="258" y="230" width="22" height="14" fill="none" stroke="#333" stroke-width="3" rx="4" />
-                    <line x1="242" y1="237" x2="258" y2="237" stroke="#333" stroke-width="3" />
-                    <!-- Screen Reflection in glasses -->
-                    <rect x="222" y="232" width="18" height="10" fill="#58a6ff" opacity="0.4" class="glow-pulse" />
-                    <rect x="260" y="232" width="18" height="10" fill="#58a6ff" opacity="0.4" class="glow-pulse" />
-                  </g>
-                  
-                  <!-- Headphones -->
-                  <g class="head-bob">
-                    <path d="M 210 240 A 40 40 0 0 1 290 240" fill="none" stroke="#f85149" stroke-width="6" />
-                    <rect x="202" y="230" width="12" height="25" fill="#20222e" rx="6" />
-                    <rect x="286" y="230" width="12" height="25" fill="#20222e" rx="6" />
-                  </g>
-
-                  <!-- Laptop Base -->
-                  <polygon points="160,390 340,390 370,410 130,410" fill="#4b506b" />
-                  <!-- Laptop Screen -->
-                  <polygon points="180,390 320,390 300,340 200,340" fill="#1a1c26" stroke="#383c51" stroke-width="3" stroke-linejoin="round" />
-                  <!-- Laptop Logo -->
-                  <circle cx="250" cy="365" r="5" fill="#58a6ff" class="glow-pulse" />
-                  
-                  <!-- Left Arm -->
-                  <path d="M 195 310 Q 160 360 210 395" fill="none" stroke="#ffcda5" stroke-width="12" stroke-linecap="round" class="arm-type-left" />
-                  <!-- Right Arm -->
-                  <path d="M 305 310 Q 340 360 290 395" fill="none" stroke="#ffcda5" stroke-width="12" stroke-linecap="round" class="arm-type-right" />
-                  
-                  <!-- Left Sleeve -->
-                  <path d="M 180 300 Q 160 360 195 365" fill="none" stroke="#2d334a" stroke-width="20" stroke-linecap="round" class="arm-type-left" />
-                  <!-- Right Sleeve -->
-                  <path d="M 320 300 Q 340 360 305 365" fill="none" stroke="#2d334a" stroke-width="20" stroke-linecap="round" class="arm-type-right" />
-                </g>
-              </svg>
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+        
+        <!-- PROJECT 01: RealityGuard AI (Featured Flagship) -->
+        <article class="project-card project-featured reveal" data-category="ai" data-project-id="realityguard" data-tilt>
+          <div class="card-ambient-glow" aria-hidden="true"></div>
+          <div class="card-glare" aria-hidden="true"></div>
+          <div class="project-card-header">
+            <span class="project-number">BUILD // 01</span>
+            <div class="project-tags-top">
+              <span class="badge-featured"><i class="fa-solid fa-star"></i> COMPUTER VISION</span>
+              <span class="badge-category">Forensics</span>
+            </div>
+            <div class="card-links">
+              <button class="btn-deep-dive" data-open-modal="realityguard" aria-label="Inspect RealityGuard AI architecture" title="Inspect Architecture">
+                <i class="fa-solid fa-binoculars"></i>
+              </button>
+              <a href="https://github.com/Satyam-123336/DeepFake-Detection" target="_blank" rel="noopener" aria-label="Open RealityGuard AI GitHub Repository" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
           </div>
 
-          <div class="about-text">
-            <p class="about-bio fade-in delay-1">
-              I'm a <strong>final-year Computer Science Engineering student</strong> at MVJ College of Engineering.
-              My passion lies in building scalable, data-driven products that bridge the gap between complex 
-              machine learning models and user-friendly web applications.
-            </p>
-            <p class="about-bio fade-in delay-2">
-              Currently, my work focuses on <strong>Deep Learning, multi-signal forensic pipelines, and full-stack development</strong>.
-              I have filed a provisional patent for an AI-Based E-Waste Collection System and have published research on Explainable Deepfake Detection.
-            </p>
-
-            <p class="skills-title fade-in delay-2">Languages</p>
-            <div class="skills-grid fade-in delay-3">
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">C/C++</span>
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">SQL</span>
-            </div>
-
-            <p class="skills-title fade-in delay-3">AI & Full-Stack Web</p>
-            <div class="skills-grid fade-in delay-4">
-              <span class="skill-tag">TensorFlow</span>
-              <span class="skill-tag">PyTorch</span>
-              <span class="skill-tag">Scikit-learn</span>
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">Next.js</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">FastAPI</span>
-              <span class="skill-tag">PostgreSQL</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" aria-label="Work experience">
-      <div class="container">
-        <span class="section-label fade-in">// experience</span>
-        <h2 class="section-title fade-in delay-1">Experience & Education</h2>
-        <p class="section-subtitle fade-in delay-2">Professional software engineering experience and academic background.</p>
-
-        <div class="timeline">
-
-          <article class="timeline-item active-item fade-in" aria-label="Freelance Software Developer at SLAY AI">
-            <div class="timeline-dot" aria-hidden="true"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <h3 class="timeline-role">Freelance Software Developer</h3>
-                <span class="timeline-period">May 2026 to Jun 2026</span>
-              </div>
-              <p class="timeline-company">
-                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>&nbsp; SLAY AI (Fashion E-Commerce) | Remote
-              </p>
-              <ul class="timeline-bullets" aria-label="Responsibilities and achievements">
-                <li>Designed and launched SLAY AI, a serverless AI-powered outfit curation platform using React 19, Deno, and Supabase Edge Functions, serving real-time fashion recommendations from 10+ e-commerce platforms.</li>
-                <li>Engineered a weighted product scoring algorithm with budget-constrained combinatorial optimization evaluating up to 1,728 outfit combinations per request, reducing API costs ~40%.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item fade-in delay-1" aria-label="AIML Intern">
-            <div class="timeline-dot" aria-hidden="true"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <h3 class="timeline-role">Artificial Intelligence & Machine Learning Intern</h3>
-                <span class="timeline-period">Jun 2025 to Jul 2025</span>
-              </div>
-              <p class="timeline-company">
-                <i class="fa-solid fa-building" aria-hidden="true"></i>&nbsp; AICTE x Edunet Foundation | Bengaluru, Karnataka
-              </p>
-              <ul class="timeline-bullets" aria-label="Responsibilities and achievements">
-                <li>Developed a predictive machine learning pipeline using a Gradient Boosting Classifier to automate salary bracket classification for 48,000+ demographic records, achieving an 85.43% accuracy rate.</li>
-                <li>Delivered a production-ready Streamlit web interface enabling HR users to generate instant, confidence-weighted predictions and process mass data via CSV uploads.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item fade-in delay-2" aria-label="Education">
-            <div class="timeline-dot" aria-hidden="true"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <h3 class="timeline-role">B.E. Computer Science and Engineering</h3>
-                <span class="timeline-period">Oct 2023 to Present</span>
-              </div>
-              <p class="timeline-company">
-                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>&nbsp; MVJ College of Engineering | Bengaluru, Karnataka
-              </p>
-              <ul class="timeline-bullets" aria-label="Responsibilities and achievements">
-                <li>GPA: 8.53/10</li>
-                <li>Secured 2nd Place in Enigma at NIT Trichy - a national case study challenge.</li>
-                <li>Design Lead at GDG MVJCE - spearheading creative strategy and UI/UX initiatives.</li>
-              </ul>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" aria-label="Projects">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <span class="section-label fade-in">// projects</span>
-            <h2 class="section-title fade-in delay-1">Things I've built</h2>
-          </div>
-          <a href="https://github.com/Satyam-123336" target="_blank" rel="noopener" class="btn btn-secondary fade-in" id="view-all-projects">
-            <i class="fa-brands fa-github"></i> View all on GitHub
-          </a>
-        </div>
-
-        <div class="projects-grid">
-
-          <article class="project-card fade-in-scale" aria-label="Project: RealityGuard AI">
-            <div class="project-icon" aria-hidden="true">
-              <i class="fa-solid fa-shield-halved"></i>
-            </div>
-            <h3 class="project-name">RealityGuard AI</h3>
+          <div class="project-card-body">
+            <h3>RealityGuard <em>AI</em></h3>
+            <p class="project-lead">Explainable Deepfake Detection and Forensic Analysis</p>
             <p class="project-desc">
-              A Multi-Signal Deepfake Detection Engine. Architected a forensic pipeline (PyTorch, MTCNN) trained on 34,800+ video samples, achieving 97.42% accuracy by correlating 5 distinct data streams. Published at AITA 2026.
+              A multimodal deepfake detection pipeline built in PyTorch. Combines a lightweight artifact CNN (~100KB parameter footprint for edge CPU inference) with facial landmark detection via MTCNN, eye blink analysis, lip-sync inconsistency detection, and classical OpenCV texture checks.
             </p>
-            <div class="project-tags" aria-label="Tech stack">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">PyTorch</span>
-              <span class="project-tag">FastAPI</span>
-              <span class="project-tag">React</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Satyam-123336" target="_blank" rel="noopener" class="project-link">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-            </div>
-          </article>
 
-          <article class="project-card fade-in-scale delay-1" aria-label="Project: EcoScrap Pickup">
-            <div class="project-icon" aria-hidden="true">
-              <i class="fa-solid fa-recycle"></i>
+            <div class="project-highlight-stats">
+              <div class="stat-box">
+                <strong class="stat-number" data-counter="97.42" data-decimals="2" data-suffix="%">97.42%</strong>
+                <span class="stat-desc">Reported Detection Accuracy</span>
+              </div>
+              <div class="stat-box">
+                <strong class="stat-number">100KB</strong>
+                <span class="stat-desc">Lightweight Edge CNN Footprint</span>
+              </div>
             </div>
-            <h3 class="project-name">EcoScrap Pickup</h3>
-            <p class="project-desc">
-              AI-Based E-Waste Collection System (Patent Pending). Integrated a MobileNetV2 CNN with ~95% accuracy and built a full-stack platform supporting CoppeliaSim-based autonomous drone simulation for e-waste logistics.
-            </p>
-            <div class="project-tags" aria-label="Tech stack">
-              <span class="project-tag">React</span>
-              <span class="project-tag">Node.js</span>
-              <span class="project-tag">TensorFlow</span>
-              <span class="project-tag">CoppeliaSim</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Satyam-123336" target="_blank" rel="noopener" class="project-link">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-            </div>
-          </article>
 
-          <article class="project-card fade-in-scale delay-2" aria-label="Project: AI Heart Health DSS">
-            <div class="project-icon" aria-hidden="true">
-              <i class="fa-solid fa-heart-pulse"></i>
-            </div>
-            <h3 class="project-name">AI Heart Health DSS</h3>
-            <p class="project-desc">
-              AI-Powered Heart Health Decision Support System. Engineered a multi-model soft voting ensemble analyzing 12,800+ PCG images (96.38% accuracy). Used Harris Hawks Optimization to boost computational efficiency.
-            </p>
-            <div class="project-tags" aria-label="Tech stack">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">TensorFlow</span>
-              <span class="project-tag">FastAPI</span>
-              <span class="project-tag">React</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Satyam-123336" target="_blank" rel="noopener" class="project-link">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" aria-label="Contact">
-      <div class="container">
-        <span class="section-label fade-in">// contact</span>
-        <h2 class="section-title fade-in delay-1">Let's work together</h2>
-        <p class="section-subtitle fade-in delay-2">Whether you have a project in mind, a role to discuss, or just want to say hello, I'd love to hear from you.</p>
-
-        <div class="contact-grid">
-
-          <div class="contact-info fade-in delay-1">
-            <h3>Get in touch</h3>
-            <p>I'm currently seeking Software Development Engineer (SDE) or Machine Learning roles. Response time is usually within 24 hours.</p>
-
-            <div class="contact-links">
-              <a href="mailto:satyamsamanta10@gmail.com" class="contact-link-item" id="contact-email">
-                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                satyamsamanta10@gmail.com
-              </a>
-              <a href="resume.pdf" class="contact-link-item" id="contact-resume" target="_blank" rel="noopener">
-                <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
-                View Resume
-              </a>
-              <a href="https://linkedin.com/in/satyamsam10" target="_blank" rel="noopener" class="contact-link-item" id="contact-linkedin">
-                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                linkedin.com/in/satyamsam10
-              </a>
-              <a href="https://github.com/Satyam-123336" target="_blank" rel="noopener" class="contact-link-item" id="contact-github">
-                <i class="fa-brands fa-github" aria-hidden="true"></i>
-                github.com/Satyam-123336
-              </a>
+            <div class="project-tech-pills">
+              <span><i class="fa-solid fa-circle-check"></i> PyTorch</span>
+              <span><i class="fa-solid fa-circle-check"></i> MTCNN</span>
+              <span><i class="fa-solid fa-circle-check"></i> OpenCV</span>
+              <span><i class="fa-solid fa-circle-check"></i> FastAPI</span>
+              <span><i class="fa-solid fa-circle-check"></i> Streamlit</span>
             </div>
           </div>
 
-          <form class="contact-form fade-in delay-2" id="contact-form" novalidate aria-label="Contact form">
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="form-name">Name</label>
-                <input
-                  type="text"
-                  class="form-input"
-                  id="form-name"
-                  name="name"
-                  placeholder="Jane Smith"
-                  autocomplete="name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="form-email">Email</label>
-                <input
-                  type="email"
-                  class="form-input"
-                  id="form-email"
-                  name="email"
-                  placeholder="jane@company.com"
-                  autocomplete="email"
-                  required
-                />
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="form-message">Message</label>
-              <textarea
-                class="form-textarea"
-                id="form-message"
-                name="message"
-                placeholder="Tell me about your project or opportunity..."
-                required
-              ></textarea>
-            </div>
-
-            <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
-
-            <button type="submit" class="btn btn-primary" id="form-submit" style="align-self:flex-start">
-              <i class="fa-solid fa-paper-plane"></i>
-              Send Message
+          <div class="project-card-footer">
+            <button class="button button-card-action" data-open-modal="realityguard">
+              <span>Inspect Architecture</span>
+              <i class="fa-solid fa-arrow-right"></i>
             </button>
-          </form>
+            <a class="button button-card-ghost" href="https://github.com/Satyam-123336/DeepFake-Detection" target="_blank" rel="noopener" title="Open GitHub Repo">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
 
+        <!-- PROJECT 02: EcoScrap Pickup -->
+        <article class="project-card reveal delay-1" data-category="ai fullstack" data-project-id="ecoscrap" data-tilt>
+          <div class="card-ambient-glow" aria-hidden="true"></div>
+          <div class="card-glare" aria-hidden="true"></div>
+          <div class="project-card-header">
+            <span class="project-number">BUILD // 02</span>
+            <span class="badge-category">E-Waste & Robotics</span>
+            <div class="card-links">
+              <button class="btn-deep-dive" data-open-modal="ecoscrap" aria-label="Inspect EcoScrap" title="Inspect Architecture">
+                <i class="fa-solid fa-binoculars"></i>
+              </button>
+              <a href="https://github.com/Satyam-123336/EcoScrap" target="_blank" rel="noopener" aria-label="Open EcoScrap repository" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card-body">
+            <h3>EcoScrap <em>Pickup</em></h3>
+            <p class="project-lead">E-Waste Logistics, Keras Vision & Drone Simulation</p>
+            <p class="project-desc">
+              An electronic waste recycling platform built with React, TypeScript, and Express. Uses a custom Keras deep learning model to classify 9 e-waste categories with weight estimation, an autonomous drone dispatch simulation in CoppeliaSim, and an EcoBot assistant powered by the Gemini API.
+            </p>
+
+            <div class="project-highlight-stats mini">
+              <div class="stat-box">
+                <strong class="stat-number">9 Classes</strong>
+                <span class="stat-desc">Keras E-Waste Vision Model</span>
+              </div>
+            </div>
+
+            <div class="project-tech-pills">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Keras / Python</span>
+              <span>Gemini API</span>
+              <span>CoppeliaSim</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="project-card-footer">
+            <button class="button button-card-action" data-open-modal="ecoscrap">
+              <span>Inspect Specs</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a class="button button-card-ghost" href="https://github.com/Satyam-123336/EcoScrap" target="_blank" rel="noopener" title="Open GitHub Repo">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 03: SLAY AI -->
+        <article class="project-card reveal delay-2" data-category="fullstack ai" data-project-id="slayai" data-tilt>
+          <div class="card-ambient-glow" aria-hidden="true"></div>
+          <div class="card-glare" aria-hidden="true"></div>
+          <div class="project-card-header">
+            <span class="project-number">BUILD // 03</span>
+            <span class="badge-category">E-Commerce & Edge</span>
+            <div class="card-links">
+              <button class="btn-deep-dive" data-open-modal="slayai" aria-label="Inspect SLAY AI" title="Inspect Architecture">
+                <i class="fa-solid fa-binoculars"></i>
+              </button>
+              <a href="https://github.com/Satyam-123336/SLAY-AI-Fashion-E-Commerce-Official-Application" target="_blank" rel="noopener" aria-label="Open SLAY AI repository" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card-body">
+            <h3>SLAY <em>AI</em></h3>
+            <p class="project-lead">Serverless Fashion Recommendation Engine</p>
+            <p class="project-desc">
+              A fashion curation platform built with React 19, Deno, and Supabase Edge Functions. Evaluates up to 1,728 outfit permutations per client request under strict budget parameters and aesthetic constraints with sub-100ms response times.
+            </p>
+
+            <div class="project-highlight-stats mini">
+              <div class="stat-box">
+                <strong class="stat-number" data-counter="1728">1,728</strong>
+                <span class="stat-desc">Combinations Evaluated / Req</span>
+              </div>
+            </div>
+
+            <div class="project-tech-pills">
+              <span>React 19</span>
+              <span>Deno</span>
+              <span>Supabase Edge</span>
+              <span>TypeScript</span>
+            </div>
+          </div>
+
+          <div class="project-card-footer">
+            <button class="button button-card-action" data-open-modal="slayai">
+              <span>Inspect Specs</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a class="button button-card-ghost" href="https://github.com/Satyam-123336/SLAY-AI-Fashion-E-Commerce-Official-Application" target="_blank" rel="noopener" title="Open GitHub Repo">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 04: Employee Salary Predictor (Verified GitHub Repo) -->
+        <article class="project-card reveal" data-category="ai" data-project-id="salarypredictor" data-tilt>
+          <div class="card-ambient-glow" aria-hidden="true"></div>
+          <div class="card-glare" aria-hidden="true"></div>
+          <div class="project-card-header">
+            <span class="project-number">BUILD // 04</span>
+            <span class="badge-category">Machine Learning</span>
+            <div class="card-links">
+              <button class="btn-deep-dive" data-open-modal="salarypredictor" aria-label="Inspect Salary Predictor" title="Inspect Architecture">
+                <i class="fa-solid fa-binoculars"></i>
+              </button>
+              <a href="https://github.com/Satyam-123336/Employee-Salary-Predictor" target="_blank" rel="noopener" aria-label="Open Employee Salary Predictor repository" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card-body">
+            <h3>Employee <em>Salary Predictor</em></h3>
+            <p class="project-lead">Demographic Compensation Classification Pipeline</p>
+            <p class="project-desc">
+              An end-to-end machine learning pipeline trained on 48,000+ demographic records to predict compensation brackets. Evaluated Gradient Boosting, Random Forest, and Logistic Regression algorithms, reaching 85.43% test accuracy with interactive single and batch CSV Streamlit predictions.
+            </p>
+
+            <div class="project-highlight-stats mini">
+              <div class="stat-box">
+                <strong class="stat-number" data-counter="85.43" data-decimals="2" data-suffix="%">85.43%</strong>
+                <span class="stat-desc">Test Accuracy on 48K+ Records</span>
+              </div>
+            </div>
+
+            <div class="project-tech-pills">
+              <span>Python</span>
+              <span>Scikit-Learn</span>
+              <span>Gradient Boosting</span>
+              <span>Streamlit</span>
+              <span>Pandas</span>
+            </div>
+          </div>
+
+          <div class="project-card-footer">
+            <button class="button button-card-action" data-open-modal="salarypredictor">
+              <span>Inspect Specs</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a class="button button-card-ghost" href="https://github.com/Satyam-123336/Employee-Salary-Predictor" target="_blank" rel="noopener" title="Open GitHub Repo">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 05: Chatty Live (Verified GitHub Repo) -->
+        <article class="project-card reveal delay-1" data-category="fullstack" data-project-id="chatty" data-tilt>
+          <div class="card-ambient-glow" aria-hidden="true"></div>
+          <div class="card-glare" aria-hidden="true"></div>
+          <div class="project-card-header">
+            <span class="project-number">BUILD // 05</span>
+            <span class="badge-category">Real-Time Web</span>
+            <div class="card-links">
+              <button class="btn-deep-dive" data-open-modal="chatty" aria-label="Inspect Chatty Live" title="Inspect Architecture">
+                <i class="fa-solid fa-binoculars"></i>
+              </button>
+              <a href="https://github.com/Satyam-123336/Chatty" target="_blank" rel="noopener" aria-label="Open Chatty repository" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card-body">
+            <h3>Chatty <em>Live</em></h3>
+            <p class="project-lead">Low-Latency Real-Time Messaging Client</p>
+            <p class="project-desc">
+              A real-time messaging application designed for fast, dependable communication. Built with TypeScript and React, featuring persistent WebSocket connections for sub-50ms message propagation, presence indicators, optimistic updates, and offline state caching.
+            </p>
+
+            <div class="project-highlight-stats mini">
+              <div class="stat-box">
+                <strong class="stat-number">&lt; 50ms</strong>
+                <span class="stat-desc">Message Delivery Latency</span>
+              </div>
+            </div>
+
+            <div class="project-tech-pills">
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>WebSockets</span>
+              <span>TailwindCSS</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+
+          <div class="project-card-footer">
+            <button class="button button-card-action" data-open-modal="chatty">
+              <span>Inspect Specs</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a class="button button-card-ghost" href="https://github.com/Satyam-123336/Chatty" target="_blank" rel="noopener" title="Open GitHub Repo">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 06: Recipe Finder App (Verified GitHub Repo) -->
+        <article class="project-card reveal delay-2" data-category="fullstack" data-project-id="recipefinder" data-tilt>
+          <div class="card-ambient-glow" aria-hidden="true"></div>
+          <div class="card-glare" aria-hidden="true"></div>
+          <div class="project-card-header">
+            <span class="project-number">BUILD // 06</span>
+            <span class="badge-category">Frontend & APIs</span>
+            <div class="card-links">
+              <button class="btn-deep-dive" data-open-modal="recipefinder" aria-label="Inspect Recipe Finder App" title="Inspect Architecture">
+                <i class="fa-solid fa-binoculars"></i>
+              </button>
+              <a href="https://github.com/Satyam-123336/Recipe-Finder-App" target="_blank" rel="noopener" aria-label="Open Recipe Finder repository" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card-body">
+            <h3>Recipe <em>Finder App</em></h3>
+            <p class="project-lead">Pantry Ingredient Search and Recipe Discovery</p>
+            <p class="project-desc">
+              An interactive recipe search web application built with JavaScript and React. Allows users to query recipes based on ingredients they already have, apply dietary filters (vegetarian, gluten-free, low-carb), and review detailed macro-nutritional breakdowns.
+            </p>
+
+            <div class="project-tech-pills">
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>REST APIs</span>
+              <span>HTML5 / CSS3</span>
+            </div>
+          </div>
+
+          <div class="project-card-footer">
+            <button class="button button-card-action" data-open-modal="recipefinder">
+              <span>Inspect Specs</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a class="button button-card-ghost" href="https://github.com/Satyam-123336/Recipe-Finder-App" target="_blank" rel="noopener" title="Open GitHub Repo">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 07: IoT Water Usage Monitor (Verified GitHub Repo) -->
+        <article class="project-card reveal" data-category="iot" data-project-id="watermonitor" data-tilt>
+          <div class="card-ambient-glow" aria-hidden="true"></div>
+          <div class="card-glare" aria-hidden="true"></div>
+          <div class="project-card-header">
+            <span class="project-number">BUILD // 07</span>
+            <span class="badge-category">Embedded & IoT</span>
+            <div class="card-links">
+              <button class="btn-deep-dive" data-open-modal="watermonitor" aria-label="Inspect Water Monitor" title="Inspect Architecture">
+                <i class="fa-solid fa-binoculars"></i>
+              </button>
+              <a href="https://github.com/Satyam-123336/Monitor-Usage-Of-Water-in-Shower---Using-ARDUINO-UNO" target="_blank" rel="noopener" aria-label="Open Water Monitor repository" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card-body">
+            <h3>IoT Water <em>Monitor</em></h3>
+            <p class="project-lead">Arduino Uno Flow Telemetry & Web Dashboard</p>
+            <p class="project-desc">
+              A hardware-software IoT monitoring system combining an Arduino Uno, liquid flow rate sensors, and a JavaScript web dashboard. Tracks shower water consumption in real time and calculates cumulative volume to encourage household water conservation.
+            </p>
+
+            <div class="project-tech-pills">
+              <span>Arduino Uno</span>
+              <span>C++</span>
+              <span>Hardware Sensors</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-card-footer">
+            <button class="button button-card-action" data-open-modal="watermonitor">
+              <span>Inspect Specs</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a class="button button-card-ghost" href="https://github.com/Satyam-123336/Monitor-Usage-Of-Water-in-Shower---Using-ARDUINO-UNO" target="_blank" rel="noopener" title="Open GitHub Repo">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==================== TECHNOLOGY MATRIX ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="section-heading reveal">
+        <div class="heading-left">
+          <p class="eyebrow"><span class="accent-number">03</span> / PRODUCTION TOOLKIT</p>
+          <h2>The Technology Matrix.</h2>
+          <p class="section-kicker">Core engineering competencies backed by shipped production and open-source code.</p>
+        </div>
+        <div class="heading-right">
+          <span class="matrix-status"><i class="fa-solid fa-microchip"></i> FULL-STACK & AI</span>
+        </div>
+      </div>
+
+      <div class="skills-matrix-grid">
+        <!-- AI & Machine Learning -->
+        <div class="skill-category-card reveal" data-tilt>
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fa-solid fa-brain"></i></div>
+            <div>
+              <h3>AI & Machine Learning</h3>
+              <span>Model Training & Evaluation</span>
+            </div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-pill"><strong>PyTorch</strong><span>Core Deep Learning</span></div>
+            <div class="skill-pill"><strong>Scikit-Learn</strong><span>Tabular Modeling</span></div>
+            <div class="skill-pill"><strong>Computer Vision</strong><span>MTCNN & OpenCV</span></div>
+            <div class="skill-pill"><strong>Google Gemini API</strong><span>LLM & Chatbot Integration</span></div>
+            <div class="skill-pill"><strong>Gradient Boosting</strong><span>Classification & Regr.</span></div>
+            <div class="skill-pill"><strong>Streamlit</strong><span>Interactive ML Apps</span></div>
+          </div>
+        </div>
+
+        <!-- Frontend & Interfaces -->
+        <div class="skill-category-card reveal delay-1" data-tilt>
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div>
+              <h3>Frontend & Web</h3>
+              <span>Fast & Responsive</span>
+            </div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-pill"><strong>React 19</strong><span>Concurrent Features</span></div>
+            <div class="skill-pill"><strong>TypeScript</strong><span>Strict Typing</span></div>
+            <div class="skill-pill"><strong>JavaScript (ES6+)</strong><span>Modern Standards</span></div>
+            <div class="skill-pill"><strong>TailwindCSS</strong><span>Design Systems</span></div>
+            <div class="skill-pill"><strong>HTML5 & CSS3</strong><span>Semantics & Flex/Grid</span></div>
+            <div class="skill-pill"><strong>Canvas API</strong><span>Visualizations</span></div>
+          </div>
+        </div>
+
+        <!-- Backend & Infrastructure -->
+        <div class="skill-category-card reveal delay-2" data-tilt>
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fa-solid fa-server"></i></div>
+            <div>
+              <h3>Backend & Databases</h3>
+              <span>APIs & Data Layers</span>
+            </div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-pill"><strong>FastAPI</strong><span>Asynchronous Python</span></div>
+            <div class="skill-pill"><strong>Node.js / Express</strong><span>RESTful Services</span></div>
+            <div class="skill-pill"><strong>PostgreSQL / MySQL</strong><span>Relational Databases</span></div>
+            <div class="skill-pill"><strong>Supabase / Deno</strong><span>Edge Execution & Auth</span></div>
+            <div class="skill-pill"><strong>WebSockets</strong><span>Real-Time Telemetry</span></div>
+            <div class="skill-pill"><strong>REST Architecture</strong><span>API Design</span></div>
+          </div>
+        </div>
+
+        <!-- DevOps & Systems -->
+        <div class="skill-category-card reveal" data-tilt>
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fa-solid fa-gears"></i></div>
+            <div>
+              <h3>DevOps & Workflow</h3>
+              <span>Development & Delivery</span>
+            </div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-pill"><strong>Git & GitHub</strong><span>Version Control</span></div>
+            <div class="skill-pill"><strong>Linux (Ubuntu)</strong><span>Shell Scripting</span></div>
+            <div class="skill-pill"><strong>Vercel & Netlify</strong><span>Deployment & CI</span></div>
+            <div class="skill-pill"><strong>Jupyter Lab</strong><span>Data Exploration</span></div>
+            <div class="skill-pill"><strong>Pandas & NumPy</strong><span>Data Wrangling</span></div>
+            <div class="skill-pill"><strong>Arduino / C++</strong><span>Embedded IoT</span></div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ==================== EXPERIENCE & TIMELINE ==================== -->
+    <section class="section experience-section" id="experience">
+      <div class="section-heading reveal">
+        <div class="heading-left">
+          <p class="eyebrow"><span class="accent-number">04</span> / TIMELINE</p>
+          <h2>Experience & education.</h2>
+        </div>
+        <div class="heading-right">
+          <a class="button button-glass" href="resume.pdf" target="_blank" rel="noopener">
+            <i class="fa-solid fa-download"></i> View Full Résumé
+          </a>
+        </div>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-track" aria-hidden="true"></div>
+
+        <!-- EXPERIENCE 1 -->
+        <article class="timeline-card reveal" data-tilt>
+          <div class="timeline-indicator">
+            <span class="timeline-pin"></span>
+            <span class="timeline-glow"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-meta">
+              <span class="timeline-period"><i class="fa-regular fa-calendar"></i> MAY 2026 - JUN 2026</span>
+              <span class="timeline-type-pill">Freelance Engineering</span>
+            </div>
+            <h3>Freelance Software Developer <span class="role-company">@ SLAY AI</span></h3>
+            <p>
+              Built a serverless fashion curation application using React 19, Deno, and Supabase Edge Functions. Developed a recommendation scoring engine that evaluated up to <strong>1,728 outfit combinations per client request</strong> within user-defined budget and style constraints.
+            </p>
+            <div class="timeline-tags">
+              <span>React 19</span>
+              <span>Deno</span>
+              <span>Supabase Edge Functions</span>
+              <span>TypeScript</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- EXPERIENCE 2 -->
+        <article class="timeline-card reveal delay-1" data-tilt>
+          <div class="timeline-indicator">
+            <span class="timeline-pin"></span>
+            <span class="timeline-glow"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-meta">
+              <span class="timeline-period"><i class="fa-regular fa-calendar"></i> JUN 2025 - JUL 2025</span>
+              <span class="timeline-type-pill">Internship</span>
+            </div>
+            <h3>AI & Machine Learning Intern <span class="role-company">@ AICTE x Edunet</span></h3>
+            <p>
+              Built an end-to-end demographic compensation classification pipeline on <strong>48,000+ records</strong> using Gradient Boosting, achieving <strong>85.43% test accuracy</strong>. Shipped an interactive Streamlit application with single prediction forms and bulk CSV processing.
+            </p>
+            <div class="timeline-tags">
+              <span>Gradient Boosting</span>
+              <span>Python</span>
+              <span>Streamlit</span>
+              <span>Scikit-Learn</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- EDUCATION & LEADERSHIP -->
+        <article class="timeline-card reveal delay-2" data-tilt>
+          <div class="timeline-indicator">
+            <span class="timeline-pin"></span>
+            <span class="timeline-glow"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-meta">
+              <span class="timeline-period"><i class="fa-regular fa-calendar"></i> OCT 2023 - PRESENT</span>
+              <span class="timeline-type-pill">Academics & Leadership</span>
+            </div>
+            <h3>B.E. Computer Science & Engineering <span class="role-company">@ MVJ College of Engineering</span></h3>
+            <p>
+              Undergraduate degree with a current cumulative GPA of <strong>8.53 / 10</strong>. Secured <strong>2nd Place at Enigma, NIT Trichy</strong> hackathon. Currently serving as <strong>Design Lead at GDG MVJCE</strong>, organizing technical workshops and mentoring peers.
+            </p>
+            <div class="timeline-tags">
+              <span>GPA 8.53/10</span>
+              <span>2nd Place @ Enigma, NIT Trichy</span>
+              <span>Design Lead @ GDG MVJCE</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel reveal" data-tilt>
+        <div class="contact-left">
+          <p class="eyebrow"><span class="accent-number">05</span> / CONTACT</p>
+          <h2>Let's build something<br><em>practical.</em></h2>
+          <p class="contact-copy">
+            I am currently open to software engineering and machine learning roles (full-time or internships) in Bengaluru or remote. If you are hiring or have a project to discuss, send a message.
+          </p>
+
+          <div class="contact-channels">
+            <div class="contact-channel-item">
+              <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="channel-info">
+                <span class="channel-label">Direct Email</span>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=satyamsamanta10@gmail.com" target="_blank" rel="noopener" class="channel-value">satyamsamanta10@gmail.com</a>
+              </div>
+              <button class="channel-copy-btn" id="copy-email-card-btn" type="button" aria-label="Copy email address" title="Copy to clipboard">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="channel-info">
+                <span class="channel-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/satyamsam10" target="_blank" rel="noopener" class="channel-value">linkedin.com/in/satyamsam10 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="channel-info">
+                <span class="channel-label">GitHub</span>
+                <a href="https://github.com/Satyam-123336" target="_blank" rel="noopener" class="channel-value">github.com/Satyam-123336 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="contact-location-pill">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Bengaluru, Karnataka, India / Open to Relocation & Remote</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="form-name">
+                <span>Your Name</span>
+                <span class="label-required">*</span>
+              </label>
+              <input id="form-name" name="name" type="text" autocomplete="name" required placeholder="Alex Rivera" class="form-input">
+              <span class="input-error-msg" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email">
+                <span>Email Address</span>
+                <span class="label-required">*</span>
+              </label>
+              <input id="form-email" name="email" type="email" autocomplete="email" required placeholder="alex@company.com" class="form-input">
+              <span class="input-error-msg" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">
+                <span>Message</span>
+                <span class="label-required">*</span>
+              </label>
+              <textarea id="form-message" name="message" rows="4" required placeholder="Share what you are working on or the role you are hiring for..." class="form-textarea"></textarea>
+              <div class="textarea-footer">
+                <span class="char-count" id="char-count">0 / 1000 characters</span>
+                <span class="input-error-msg" id="message-error"></span>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="button button-primary form-submit-btn magnetic" id="form-submit" type="submit" data-magnetic>
+                <span>Draft in Gmail</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+              <span id="form-status" class="form-status-msg" role="status" aria-live="polite"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer role="contentinfo">
+  <!-- ==================== SITE FOOTER ==================== -->
+  <footer class="site-footer">
     <div class="footer-inner">
-      <p class="footer-copy">
-        &copy; <span id="copyright-year">2026</span>
-        <a href="#hero">Satyam Samanta</a>. Designed and built with care.
-      </p>
-      <div class="footer-socials" aria-label="Social links">
-        <a href="https://github.com/Satyam-123336"      target="_blank" rel="noopener" class="footer-social-link" aria-label="GitHub" id="footer-github">
-          <i class="fa-brands fa-github"></i>
+      <div class="footer-left">
+        <a class="brand" href="#hero">
+          <span class="brand-mark"><span>S</span></span>
+          <span class="brand-text">Satyam<span class="accent">.</span></span>
         </a>
-        <a href="https://linkedin.com/in/satyamsam10" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn" id="footer-linkedin">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="mailto:satyamsamanta10@gmail.com"     class="footer-social-link" aria-label="Email" id="footer-email">
-          <i class="fa-solid fa-envelope"></i>
+        <p class="footer-tagline">AI & Full-Stack Systems. Built in Bengaluru, India.</p>
+      </div>
+
+      <div class="footer-center">
+        <span class="footer-copy">© <span id="copyright-year">2026</span> Satyam Samanta.</span>
+        <span class="footer-sub">All rights reserved. Code licensed under MIT.</span>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-social-links">
+          <a href="https://github.com/Satyam-123336" target="_blank" rel="noopener" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/satyamsam10" target="_blank" rel="noopener" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=satyamsamanta10@gmail.com" target="_blank" rel="noopener" aria-label="Send email via Gmail"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <a href="#hero" class="back-to-top-btn" aria-label="Back to top" title="Scroll back to top">
+          <i class="fa-solid fa-arrow-up"></i>
         </a>
       </div>
     </div>
   </footer>
 
-  <div id="cursor-spotlight" aria-hidden="true"></div>
-
+  <!-- Application Logic -->
   <script src="script.js"></script>
-
 </body>
 </html>
