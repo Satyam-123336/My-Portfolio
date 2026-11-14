@@ -613,7 +613,7 @@
     { title: 'Recipe Finder App (Pantry Search)', projectId: 'recipefinder', category: 'Projects', icon: 'fa-utensils' },
     { title: 'IoT Water Usage Monitor (Arduino Uno)', projectId: 'watermonitor', category: 'Projects', icon: 'fa-faucet-drip' },
     // Actions
-    { title: 'View Résumé (PDF)', action: 'resume', category: 'Actions', icon: 'fa-file-pdf' },
+    { title: 'Request Résumé (via Gmail)', action: 'resume', category: 'Actions', icon: 'fa-file-pdf' },
     { title: 'Copy Email to Clipboard', action: 'copy-email', category: 'Actions', icon: 'fa-copy' },
     { title: 'Toggle Dark / Light Theme', action: 'theme', category: 'Actions', icon: 'fa-circle-half-stroke' },
     { title: 'Toggle Audio Effects', action: 'audio', category: 'Actions', icon: 'fa-volume-high' },
@@ -731,7 +731,7 @@
     } else if (item.action) {
       switch (item.action) {
         case 'resume':
-          window.open('resume.pdf', '_blank');
+          window.open('https://mail.google.com/mail/?view=cm&fs=1&to=satyamsamanta10@gmail.com&su=Resume%20Request%20-%20Satyam%20Samanta&body=Hi%20Satyam%2C%0A%0AI%20would%20like%20to%20request%20a%20copy%20of%20your%20r%C3%A9sum%C3%A9.%0A%0AThanks!', '_blank', 'noopener,noreferrer');
           break;
         case 'copy-email':
           copyEmailToClipboard();
