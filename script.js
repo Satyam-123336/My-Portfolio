@@ -440,7 +440,7 @@
       <div class="term-line-output">
         <span class="highlight">AVAILABLE COMMANDS:</span><br>
         &nbsp; : <span class="blue">skills</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: View core tech competencies<br>
-        &nbsp; : <span class="blue">projects</span> &nbsp;&nbsp;&nbsp;: List all 7 GitHub projects<br>
+        &nbsp; : <span class="blue">projects</span> &nbsp;&nbsp;&nbsp;: List all 8 GitHub projects<br>
         &nbsp; : <span class="blue">metrics</span> &nbsp;&nbsp;&nbsp;&nbsp;: Key numbers & benchmarks<br>
         &nbsp; : <span class="blue">whoami</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Satyam's background & focus<br>
         &nbsp; : <span class="blue">contact</span> &nbsp;&nbsp;&nbsp;&nbsp;: Email, GitHub, and LinkedIn<br>
@@ -451,7 +451,7 @@
     skills: () => `
       <div class="term-line-output">
         <span class="highlight">TECHNICAL STACK:</span><br>
-        &nbsp;[AI & ML] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PyTorch, Scikit-Learn, MTCNN, OpenCV, Gemini API<br>
+        &nbsp;[AI & ML] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PyTorch, TensorFlow, Scikit-Learn, MTCNN, OpenCV, Gemini API<br>
         &nbsp;[FRONTEND] &nbsp;&nbsp;&nbsp;React 19, TypeScript, JavaScript, TailwindCSS, HTML5/CSS3<br>
         &nbsp;[BACKEND] &nbsp;&nbsp;&nbsp;&nbsp;FastAPI, Node.js, Deno, PostgreSQL, MySQL, Supabase<br>
         &nbsp;[DEV & IOT] &nbsp;&nbsp;Git, GitHub, Linux, Streamlit, Arduino Uno, C++
@@ -461,18 +461,23 @@
       <div class="term-line-output">
         <span class="highlight">VERIFIED GITHUB REPOSITORIES:</span><br>
         &nbsp;01. <strong class="highlight">RealityGuard AI</strong> : 97.42% accuracy deepfake detection (PyTorch)<br>
-        &nbsp;02. <strong class="highlight">EcoScrap Pickup</strong> : Keras e-waste vision & drone simulation (TypeScript)<br>
-        &nbsp;03. <strong class="highlight">SLAY AI</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1,728 combos/req fashion engine (React 19, Deno)<br>
-        &nbsp;04. <strong class="highlight">Salary Predictor</strong> : 85.43% accuracy gradient boosting (48K records)<br>
-        &nbsp;05. <strong class="highlight">Chatty Live</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Real-time chat with WebSockets (TypeScript)<br>
-        &nbsp;06. <strong class="highlight">Recipe Finder</strong> &nbsp;&nbsp;&nbsp;: Pantry ingredient recipe search (React/JS)<br>
-        &nbsp;07. <strong class="highlight">IoT Water Monitor</strong> : Arduino Uno flow sensor telemetry (C++)
+        &nbsp;02. <strong class="highlight">Heart Sound DSS</strong> &nbsp;: 96.38% accuracy phonocardiogram classifier (TensorFlow)<br>
+        &nbsp;03. <strong class="highlight">EcoScrap Pickup</strong> : Keras e-waste vision & drone simulation (TypeScript)<br>
+        &nbsp;04. <strong class="highlight">SLAY AI</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1,728 combos/req fashion engine (React 19, Deno)<br>
+        &nbsp;05. <strong class="highlight">Salary Predictor</strong> : 85.43% accuracy gradient boosting (48K records)<br>
+        &nbsp;06. <strong class="highlight">Chatty Live</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Real-time chat with WebSockets (TypeScript)<br>
+        &nbsp;07. <strong class="highlight">Recipe Finder</strong> &nbsp;&nbsp;&nbsp;: Pantry ingredient recipe search (React/JS)<br>
+        &nbsp;08. <strong class="highlight">IoT Water Monitor</strong> : Arduino Uno flow sensor telemetry (C++)
       </div>
     `,
     metrics: () => `
       <div class="term-line-output">
-        <span class="highlight">KEY BENCHMARKS:</span><br>
+        <span class="highlight">KEY BENCHMARKS & RESEARCH:</span><br>
+        &nbsp;• Indian Patent Filed: <span class="highlight">EcoScrap Automated Logistics & Vision</span><br>
+        &nbsp;• Springer LNNS: <span class="highlight">RealityGuard AI Publication Forthcoming</span><br>
+        &nbsp;• Research Paper Completed: <span class="highlight">Heart Sound DSS (96.38% Accuracy)</span><br>
         &nbsp;• RealityGuard Detection Accuracy: <span class="highlight">97.42%</span><br>
+        &nbsp;• Heart Sound DSS Accuracy: <span class="highlight">96.38%</span><br>
         &nbsp;• Salary Classification Test Accuracy: <span class="highlight">85.43%</span><br>
         &nbsp;• SLAY AI Outfit Scoring: <span class="highlight">1,728 combinations / req</span><br>
         &nbsp;• Dataset Records Evaluated: <span class="highlight">48,000+</span><br>
@@ -604,8 +609,9 @@
     { title: 'Jump to Technical Stack', section: 'skills', category: 'Navigation', icon: 'fa-microchip' },
     { title: 'Jump to Experience & Timeline', section: 'experience', category: 'Navigation', icon: 'fa-briefcase' },
     { title: 'Jump to Contact Section', section: 'contact', category: 'Navigation', icon: 'fa-paper-plane' },
-    // Projects (All 7 Verified GitHub Repos)
+    // Projects (All 8 Verified GitHub Repos)
     { title: 'RealityGuard AI (Deepfake Forensics)', projectId: 'realityguard', category: 'Projects', icon: 'fa-shield-halved' },
+    { title: 'Heart Sound DSS (Biomedical Audio AI)', projectId: 'heartsound', category: 'Projects', icon: 'fa-heart-pulse' },
     { title: 'EcoScrap Pickup (Keras Vision & Drone Sim)', projectId: 'ecoscrap', category: 'Projects', icon: 'fa-recycle' },
     { title: 'SLAY AI (Fashion Recommendation Engine)', projectId: 'slayai', category: 'Projects', icon: 'fa-shirt' },
     { title: 'Employee Salary Predictor (ML Classification)', projectId: 'salarypredictor', category: 'Projects', icon: 'fa-chart-line' },
@@ -759,10 +765,11 @@
     realityguard: {
       title: 'RealityGuard AI',
       category: 'Computer Vision & Forensics',
-      heroStat: '97.42% Reported Detection Accuracy',
+      heroStat: '97.42% Accuracy · Forthcoming in Springer LNNS',
       github: 'https://github.com/Satyam-123336/DeepFake-Detection',
-      overview: 'A multimodal deepfake detection pipeline built in PyTorch to identify manipulated facial media by analyzing both visual blending traces and temporal biometric signals.',
+      overview: 'A multimodal deepfake detection pipeline built in PyTorch to identify manipulated facial media by analyzing both visual blending traces and temporal biometric signals. Accepted for publication in Springer Lecture Notes in Networks and Systems (LNNS).',
       architecture: [
+        'Accepted for forthcoming publication in Springer Lecture Notes in Networks and Systems (LNNS).',
         'Face detection and bounding box alignment using Multi-Task Cascaded Convolutional Networks (MTCNN).',
         'Lightweight artifact CNN with a ~100KB parameter footprint, optimized for real-time edge CPU inference.',
         'Temporal eye-blink frequency tracking and lip-audio synchronization cross-correlation.',
@@ -771,13 +778,30 @@
       ],
       stack: ['PyTorch', 'MTCNN', 'OpenCV', 'FastAPI', 'Streamlit', 'Python', 'Scikit-Learn']
     },
+    heartsound: {
+      title: 'Heart Sound DSS',
+      category: 'Biomedical Audio AI & Classification',
+      heroStat: '96.38% Accuracy · Research Paper Completed',
+      github: 'https://github.com/Satyam-123336/Classifying-the-Heart-Sound-Signals-for-an-efficient-DSS',
+      overview: 'An acoustic cardiology decision support pipeline analyzing phonocardiogram (PCG) audio signals to detect cardiovascular abnormalities and assist clinical screening. Full research paper completed.',
+      architecture: [
+        'Comprehensive research paper completed analyzing PCG textural features and bio-acoustic modeling.',
+        'Acoustic signal preprocessing, baseline wander removal, and discrete wavelet denoising on phonocardiogram recordings.',
+        'Textural and time-frequency feature extraction utilizing MFCCs, spectral chromagrams, and local binary patterns.',
+        'Metaheuristic optimization using Harris Hawks Optimization (HHO) for optimal feature subset selection.',
+        'Ensemble deep learning classification architecture combining convolutional neural representations with gradient boosting.',
+        'Achieved 96.38% test classification accuracy on benchmark PhysioNet cardiovascular audio datasets.'
+      ],
+      stack: ['Python', 'TensorFlow', 'Ensemble ML', 'Librosa', 'Signal Processing', 'Scikit-Learn']
+    },
     ecoscrap: {
       title: 'EcoScrap Pickup',
       category: 'E-Waste Recycling & Robotics Simulation',
-      heroStat: '9-Class Keras Vision & Drone Simulation',
+      heroStat: 'Indian Provisional Patent Filed · 9-Class Vision',
       github: 'https://github.com/Satyam-123336/EcoScrap',
-      overview: 'An electronic waste recycling platform connecting households with automated scrap pickup logistics, computer vision classification, and autonomous drone simulation.',
+      overview: 'An electronic waste recycling platform connecting households with automated scrap pickup logistics, computer vision classification, and autonomous drone simulation. Indian provisional patent filed.',
       architecture: [
+        'Indian Provisional Patent filed for automated e-waste classification and drone pickup logistics architecture.',
         'Image classification pipeline using a custom Keras deep learning model trained across 9 electronic waste categories (PCBs, batteries, hard drives, mobile devices, accessories) with weight estimation.',
         'Autonomous drone dispatch simulation with waypoint telemetry built using CoppeliaSim and Lua scripts.',
         'Interactive 24/7 EcoBot assistant powered by the Google Gemini API (@google/generative-ai) for recycling guidance.',

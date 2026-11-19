@@ -1776,7 +1776,6 @@ kbd {
 
 /* Flagship Featured Card */
 .project-featured {
-  grid-row: span 2;
   background: linear-gradient(160deg, #121c29, var(--surface));
   border-color: rgba(96, 165, 250, 0.25);
 }
@@ -1789,7 +1788,7 @@ kbd {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .project-number {
@@ -1797,6 +1796,15 @@ kbd {
   font-size: 0.72rem;
   color: var(--lime);
   letter-spacing: 0.1em;
+}
+
+.project-badges-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  min-height: 28px;
 }
 
 .project-tags-top {
@@ -1812,6 +1820,39 @@ kbd {
   background: rgba(251, 191, 36, 0.08);
   padding: 3px 8px;
   border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.badge-accolade {
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  letter-spacing: 0.02em;
+}
+
+.badge-accolade.patent {
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  background: rgba(52, 211, 153, 0.08);
+}
+
+.badge-accolade.pub {
+  color: #a78bfa;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  background: rgba(167, 139, 250, 0.08);
+}
+
+.badge-accolade.paper {
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  background: rgba(56, 189, 248, 0.08);
 }
 
 .badge-category {
@@ -1822,6 +1863,8 @@ kbd {
   padding: 3px 8px;
   border-radius: 3px;
   text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
 }
 
 .card-links {
@@ -1849,46 +1892,58 @@ kbd {
   transform: translateY(-2px);
 }
 
-.project-card-body h3 {
-  font-family: var(--display);
-  font-size: clamp(2rem, 3.2vw, 3.2rem);
-  letter-spacing: -0.05em;
-  color: var(--text-white);
-  line-height: 1.05;
-  margin-bottom: 8px;
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
-.project-featured .project-card-body h3 {
-  font-size: clamp(2.5rem, 4.2vw, 4.2rem);
+.project-card-body h3 {
+  font-family: var(--display);
+  font-size: clamp(1.6rem, 2.1vw, 2.1rem);
+  letter-spacing: -0.04em;
+  color: var(--text-white);
+  line-height: 1.15;
+  margin-bottom: 8px;
+  min-height: 2.3em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .project-lead {
   font-family: var(--mono);
   font-size: 0.78rem;
   color: var(--lime);
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   letter-spacing: 0.03em;
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .project-desc {
   color: var(--muted);
-  line-height: 1.8;
-  margin-bottom: 28px;
+  line-height: 1.75;
+  margin-bottom: 18px;
+  min-height: 4.8em;
 }
 
 .project-highlight-stats {
   display: flex;
   gap: 24px;
-  margin: 28px 0;
-  padding: 16px 20px;
+  margin: 20px 0;
+  padding: 14px 18px;
   background: var(--surface-2);
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
 }
 
 .project-highlight-stats.mini {
-  margin: 18px 0;
+  margin: 0 0 18px 0;
   padding: 12px 16px;
+  min-height: 68px;
+  display: flex;
+  align-items: center;
 }
 
 .stat-box {
@@ -1941,7 +1996,7 @@ kbd {
 .project-card-footer {
   display: flex;
   gap: 10px;
-  margin-top: 28px;
+  margin-top: auto;
   padding-top: 20px;
   border-top: 1px solid var(--line);
 }
@@ -2677,6 +2732,18 @@ kbd {
 @media (max-width: 540px) {
   .section {
     padding: 90px 20px;
+  }
+  .project-card {
+    padding: 24px 20px;
+  }
+  .project-card-body h3 {
+    min-height: auto;
+  }
+  .project-lead {
+    min-height: auto;
+  }
+  .project-desc {
+    min-height: auto;
   }
   .hero {
     padding: calc(var(--header-height) + 20px) 20px 60px;
