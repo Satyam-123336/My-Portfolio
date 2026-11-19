@@ -451,7 +451,7 @@
     skills: () => `
       <div class="term-line-output">
         <span class="highlight">TECHNICAL STACK:</span><br>
-        &nbsp;[AI & ML] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PyTorch, TensorFlow, Scikit-Learn, MTCNN, OpenCV, Gemini API<br>
+        &nbsp;[AI & ML] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PyTorch, TensorFlow, Scikit-Learn, OpenCV, Generative AI, Ensemble ML<br>
         &nbsp;[FRONTEND] &nbsp;&nbsp;&nbsp;React 19, TypeScript, JavaScript, TailwindCSS, HTML5/CSS3<br>
         &nbsp;[BACKEND] &nbsp;&nbsp;&nbsp;&nbsp;FastAPI, Node.js, Deno, PostgreSQL, MySQL, Supabase<br>
         &nbsp;[DEV & IOT] &nbsp;&nbsp;Git, GitHub, Linux, Streamlit, Arduino Uno, C++
@@ -464,7 +464,7 @@
         &nbsp;02. <strong class="highlight">Heart Sound DSS</strong> &nbsp;: 96.38% accuracy phonocardiogram classifier (TensorFlow)<br>
         &nbsp;03. <strong class="highlight">EcoScrap Pickup</strong> : Keras e-waste vision & drone simulation (TypeScript)<br>
         &nbsp;04. <strong class="highlight">SLAY AI</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1,728 combos/req fashion engine (React 19, Deno)<br>
-        &nbsp;05. <strong class="highlight">Salary Predictor</strong> : 85.43% accuracy gradient boosting (48K records)<br>
+        &nbsp;05. <strong class="highlight">Salary Predictor</strong> : 85.43% accuracy ensemble modeling (48K records)<br>
         &nbsp;06. <strong class="highlight">Chatty Live</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Real-time chat with WebSockets (TypeScript)<br>
         &nbsp;07. <strong class="highlight">Recipe Finder</strong> &nbsp;&nbsp;&nbsp;: Pantry ingredient recipe search (React/JS)<br>
         &nbsp;08. <strong class="highlight">IoT Water Monitor</strong> : Arduino Uno flow sensor telemetry (C++)
@@ -789,7 +789,7 @@
         'Acoustic signal preprocessing, baseline wander removal, and discrete wavelet denoising on phonocardiogram recordings.',
         'Textural and time-frequency feature extraction utilizing MFCCs, spectral chromagrams, and local binary patterns.',
         'Metaheuristic optimization using Harris Hawks Optimization (HHO) for optimal feature subset selection.',
-        'Ensemble deep learning classification architecture combining convolutional neural representations with gradient boosting.',
+        'Ensemble deep learning classification architecture combining convolutional neural representations with boosting ensembles.',
         'Achieved 96.38% test classification accuracy on benchmark PhysioNet cardiovascular audio datasets.'
       ],
       stack: ['Python', 'TensorFlow', 'Ensemble ML', 'Librosa', 'Signal Processing', 'Scikit-Learn']
@@ -804,11 +804,11 @@
         'Indian Provisional Patent filed for automated e-waste classification and drone pickup logistics architecture.',
         'Image classification pipeline using a custom Keras deep learning model trained across 9 electronic waste categories (PCBs, batteries, hard drives, mobile devices, accessories) with weight estimation.',
         'Autonomous drone dispatch simulation with waypoint telemetry built using CoppeliaSim and Lua scripts.',
-        'Interactive 24/7 EcoBot assistant powered by the Google Gemini API (@google/generative-ai) for recycling guidance.',
+        'Interactive 24/7 EcoBot assistant powered by conversational generative AI and LLM integration for recycling guidance.',
         'Full-stack web architecture built with React 18, TypeScript, Express.js, and PostgreSQL (Neon / Drizzle ORM).',
         'Gamified EcoPoints reward system (50 points/kg) with tier badges and carbon offset tracking (0.4 kg CO2 saved per kg recycled).'
       ],
-      stack: ['React 18', 'TypeScript', 'Keras / Python', 'Gemini API', 'CoppeliaSim', 'PostgreSQL', 'Express']
+      stack: ['React 18', 'TypeScript', 'Keras / Python', 'Generative AI', 'CoppeliaSim', 'PostgreSQL', 'Express']
     },
     slayai: {
       title: 'SLAY AI E-Commerce Platform',
@@ -826,17 +826,17 @@
     },
     salarypredictor: {
       title: 'Employee Salary Predictor',
-      category: 'Machine Learning & Classification',
+      category: 'Machine Learning & Predictive Modeling',
       heroStat: '85.43% Accuracy on 48,000+ Records',
       github: 'https://github.com/Satyam-123336/Employee-Salary-Predictor',
       overview: 'An end-to-end demographic compensation classification pipeline developed using Scikit-Learn and trained on over 48,000 real-world employee records.',
       architecture: [
         'Data preprocessing, missing value imputation, and categorical feature encoding across 48,000+ census records.',
-        'Model evaluation comparing Gradient Boosting, Random Forest, and Logistic Regression classifiers.',
-        'Achieved 85.43% test accuracy using Gradient Boosting with tuned hyperparameters.',
+        'Model evaluation comparing tree-based boosting ensembles, random forests, and linear classifiers.',
+        'Achieved 85.43% test accuracy using optimized ensemble models with tuned hyperparameters.',
         'Interactive Streamlit web application providing single employee manual entry and bulk CSV batch prediction.'
       ],
-      stack: ['Python', 'Scikit-Learn', 'Gradient Boosting', 'Streamlit', 'Pandas', 'NumPy']
+      stack: ['Python', 'Scikit-Learn', 'Ensemble Learning', 'Streamlit', 'Pandas', 'NumPy']
     },
     chatty: {
       title: 'Chatty Live',
