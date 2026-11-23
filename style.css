@@ -2358,10 +2358,10 @@ kbd {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  padding: clamp(34px, 6vw, 75px);
+  padding: clamp(28px, 5vw, 68px);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8vw;
+  gap: clamp(32px, 6vw, 68px);
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
@@ -2369,11 +2369,13 @@ kbd {
 
 .contact-left h2 {
   font-family: var(--display);
-  font-size: clamp(2.4rem, 4.5vw, 4.2rem);
-  line-height: 1;
-  letter-spacing: -0.05em;
+  font-size: clamp(2.2rem, 4.5vw, 4.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
   color: var(--text-white);
   margin-bottom: 20px;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .contact-copy {
@@ -2381,6 +2383,7 @@ kbd {
   line-height: 1.8;
   margin-bottom: 36px;
   max-width: 480px;
+  word-break: break-word;
 }
 
 .contact-channels {
@@ -2392,12 +2395,13 @@ kbd {
 .contact-channel-item {
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 14px 18px;
+  gap: 14px;
+  padding: 12px 16px;
   background: var(--surface-2);
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   transition: border-color var(--transition);
+  max-width: 100%;
 }
 
 .contact-channel-item:hover {
@@ -2407,6 +2411,8 @@ kbd {
 .channel-icon {
   width: 38px;
   height: 38px;
+  min-width: 38px;
+  flex-shrink: 0;
   border-radius: 50%;
   background: rgba(var(--lime-rgb), 0.1);
   color: var(--lime);
@@ -2417,8 +2423,11 @@ kbd {
 
 .channel-info {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
 }
 
 .channel-label {
@@ -2433,6 +2442,16 @@ kbd {
   font-family: var(--mono);
   font-size: 0.85rem;
   transition: color var(--transition);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.channel-value i {
+  font-size: 0.72em;
+  margin-left: 4px;
+  vertical-align: 1px;
 }
 
 .channel-value:hover {
@@ -2440,24 +2459,30 @@ kbd {
 }
 
 .channel-copy-btn {
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  flex-shrink: 0;
   border-radius: var(--radius-sm);
   border: 1px solid var(--line);
+  background: var(--surface);
   color: var(--muted);
   display: grid;
   place-items: center;
+  cursor: pointer;
   transition: all 0.2s;
 }
 
-.channel-copy-btn:hover {
+.channel-copy-btn:hover,
+.channel-copy-btn:focus-visible {
   border-color: var(--lime);
   color: var(--lime);
+  background: rgba(var(--lime-rgb), 0.1);
 }
 
 .contact-location-pill {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   font-family: var(--mono);
   font-size: 0.68rem;
@@ -2466,10 +2491,22 @@ kbd {
   border: 1px dashed var(--line);
   border-radius: var(--radius-sm);
   margin-top: 8px;
+  line-height: 1.5;
+  max-width: 100%;
 }
 
 .contact-location-pill i {
   color: var(--lime);
+  margin-top: 3px;
+  flex-shrink: 0;
+  font-size: 0.78rem;
+}
+
+.contact-location-pill span {
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Contact Form */
@@ -2477,12 +2514,14 @@ kbd {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 100%;
 }
 
 .form-group label {
@@ -2508,6 +2547,14 @@ kbd {
   font-size: 0.9rem;
   outline: none;
   transition: border-color var(--transition), box-shadow var(--transition);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 110px;
 }
 
 .form-input:focus, .form-textarea:focus {
@@ -2519,6 +2566,8 @@ kbd {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
   font-family: var(--mono);
   font-size: 0.65rem;
   color: var(--muted-dim);
@@ -2673,7 +2722,7 @@ html, body {
 }
 
 /* ==========================================================================
-   992px: Tablet portrait — stack major layouts
+   992px: Tablet portrait - stack major layouts
    ========================================================================== */
 @media (max-width: 992px) {
   .hero {
@@ -2701,7 +2750,8 @@ html, body {
   }
   .contact-panel {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 40px;
+    padding: 36px 28px;
   }
   /* Section headings: stack badge below title */
   .section-heading {
@@ -2720,7 +2770,7 @@ html, body {
 }
 
 /* ==========================================================================
-   820px: Large phone / small tablet — nav, grid, footer
+   820px: Large phone / small tablet - nav, grid, footer
    ========================================================================== */
 @media (max-width: 820px) {
   .desktop-nav {
@@ -2787,10 +2837,15 @@ html, body {
   .timeline-track {
     left: 15px;
   }
+  /* Contact panel */
+  .contact-panel {
+    padding: 32px 24px;
+    gap: 36px;
+  }
 }
 
 /* ==========================================================================
-   640px: Mobile — comprehensive phone layout
+   640px: Mobile - comprehensive phone layout
    ========================================================================== */
 @media (max-width: 640px) {
   :root {
@@ -3001,23 +3056,82 @@ html, body {
     gap: 6px;
   }
 
-  /* Contact form */
+  /* Contact section mobile overhaul */
   .contact-panel {
-    gap: 36px;
+    padding: 24px 16px;
+    gap: 28px;
+    border-radius: var(--radius-md);
+  }
+  .contact-left h2 {
+    font-size: clamp(1.7rem, 6.8vw, 2.3rem);
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  .contact-left h2 .contact-title-br {
+    display: none;
+  }
+  .contact-copy {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  .contact-channels {
+    gap: 10px;
+  }
+  .contact-channel-item {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+  .channel-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    font-size: 0.92rem;
+  }
+  .channel-label {
+    font-size: 0.58rem;
+  }
+  .channel-value {
+    font-size: 0.76rem;
+  }
+  .channel-copy-btn {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+  }
+  .contact-location-pill {
+    padding: 9px 11px;
+    font-size: 0.62rem;
+    gap: 8px;
+  }
+  .contact-form {
+    gap: 14px;
+  }
+  .form-group {
+    gap: 6px;
+  }
+  .form-input,
+  .form-textarea {
+    padding: 11px 13px;
+    font-size: 16px; /* prevents iOS zoom on focus */
   }
   .form-actions {
     flex-direction: column;
     align-items: stretch;
+    gap: 10px;
   }
   .form-actions .button {
     width: 100%;
     justify-content: center;
     min-height: 48px;
   }
-  .form-group input,
-  .form-group textarea,
-  .form-group select {
-    font-size: 16px; /* prevents iOS zoom on focus */
+  .form-status-msg {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  .site-footer {
+    padding: 36px 18px 28px;
   }
 }
 
@@ -3048,6 +3162,37 @@ html, body {
   .skill-items {
     grid-template-columns: 1fr 1fr;
   }
+  /* Contact panel */
+  .contact-panel {
+    padding: 20px 12px;
+    gap: 24px;
+  }
+  .contact-left h2 {
+    font-size: clamp(1.45rem, 7.5vw, 1.95rem);
+  }
+  .contact-channel-item {
+    padding: 9px 10px;
+    gap: 8px;
+  }
+  .channel-icon {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    font-size: 0.85rem;
+  }
+  .channel-value {
+    font-size: 0.72rem;
+  }
+  .channel-copy-btn {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+  }
+  .contact-location-pill {
+    padding: 8px 10px;
+    font-size: 0.58rem;
+    gap: 6px;
+  }
   /* Command palette: full-width on tiny screens */
   .command-palette-overlay {
     padding: 10px;
@@ -3061,6 +3206,9 @@ html, body {
   /* Mobile nav panel: full-width */
   .mobile-menu-panel {
     width: 100%;
+  }
+  .site-footer {
+    padding: 32px 16px 24px;
   }
 }
 
@@ -3092,6 +3240,35 @@ html, body {
   }
   .project-modal-card {
     padding: 16px 14px;
+  }
+  /* Contact panel */
+  .contact-panel {
+    padding: 16px 10px;
+    gap: 20px;
+  }
+  .contact-channel-item {
+    padding: 8px 8px;
+    gap: 7px;
+  }
+  .channel-icon {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    font-size: 0.8rem;
+  }
+  .channel-value {
+    font-size: 0.68rem;
+  }
+  .channel-copy-btn {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+  }
+  .contact-left h2 {
+    font-size: clamp(1.35rem, 8vw, 1.65rem);
+  }
+  .site-footer {
+    padding: 28px 14px 20px;
   }
 }
 
